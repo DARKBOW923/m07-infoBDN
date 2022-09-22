@@ -14,7 +14,6 @@
 </form>
   
 <?php
-echo "hola!";
 //datos de la conexion a la base de datos
 $IP = "192.168.1.37";
 $BASE_DATOS = "infoBDN";
@@ -27,7 +26,8 @@ $CONEXION = mysqli_connect($IP,$USUARIO,$CONTRASENYA,$BASE_DATOS);
 
 
     if (mysqli_connect_errno()){
-        echo "conexion no realizada :c";
+        
+        "conexion no realizada :c";
     }else{
         echo "BIENVENIDO :D";
     }

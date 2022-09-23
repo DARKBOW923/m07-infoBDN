@@ -24,7 +24,7 @@
 <?php
 
 //datos de la conexion a la base de datos
-$IP = "192.168.1.37";
+$IP = "192.168.12.153";
 $BASE_DATOS = "infoBDN";
 $USUARIO="administrador";
 $PASSWD ="1234";
@@ -46,9 +46,8 @@ if (mysqli_connect_errno()){
 }
 //aqui lo que hacemos es recoger los datos del usuario..
 //variable en la que guardamos la sentencia sql.
-$SQL = "INSERT INTO ALUMNOS (ID_ALUMNO,DNI,NOMBRE,APELLIDO,FOTO,CONTRASENYA) VALUES ($ID_ALUMNO,'$DNI','$NOMBRE','$APELLIDO','$FOTO',md5('$CONTRASENYA')), DESACTIVAR='true'";
-    
-
+$SQL = "INSERT INTO ALUMNOS (ID_ALUMNO,DNI,NOMBRE,APELLIDO,FOTO,CONTRASENYA, DESACTIVAR) VALUES ($ID_ALUMNO,'{$DNI}','{$NOMBRE}','{$APELLIDO}','{$FOTO}',md5('{$CONTRASENYA}'), DESACTIVAR = 'true')";
+echo $SQL;
 
 mysqli_query($CONEXION,$SQL);
 ?>

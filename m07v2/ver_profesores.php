@@ -36,6 +36,7 @@ $PEPO =mysqli_query($CONEXION,$BUSCADOR);
 
     
 echo '<table border = 1px solid black>';
+      //generamos la tabla con los datos que hemos obtenido
 while ( $fila = mysqli_fetch_array($PEPO) ) {
     echo '
     <tr> 

@@ -62,8 +62,7 @@ if (mysqli_connect_errno()){
     echo "conexion no realizada :c";
 }else{
 }
-//aqui lo que hacemos es recoger los datos del usuario..
-//variable en la que guardamos la sentencia sql.
+
 
 ?>
 

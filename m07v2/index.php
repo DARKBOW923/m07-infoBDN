@@ -36,17 +36,13 @@
     
       $RESULTADO=mysqli_query ($CONEXION, $CONSULTA);
       if($user = mysqli_fetch_assoc($RESULTADO)) {
-      echo '<a href="curso.php"> CLICK AQUI PARA IR **VER** CURSOS></a><br>';
+        echo '<a href="curso.php"> CLICK AQUI PARA IR **VER** CURSOS></a><br>';
         echo '<a href="cursos2.php"> CLICK AQUI PARA IR **VER** PROFESORES.></a><br>';
         echo '<a href="anyadir_cursos.php"> CLICK AQUI PARA IR **ANYADIR** CURSOS.></a><br>';
-        echo '<a href="eliminar_curso.php"> CLICK AQUI PARA IR **ELIMINAR** CURSOS.></a><br>';
         echo '<a href="alumnos.php"> CLICK AQUI PARA IR **ANYADIR** ALUMNOS.></a><br>';
-        echo '<a href="eliminar_alumnos.php"> CLICK AQUI PARA  **ELIMINAR** ALUMNOS.></a><br>'
-        echo '<a href="modificar_alumnos.php"> CLICK AQUI PARA IR **EDITAR** ALUMNOS.></a><br>'
-        echo '<a href="eliminar_profesor.php"> CLICK AQUI PARA IR **ELIMINAR** PROFESORES.></a><br>'
-        echo '<a href="modificar_profesor.php"> CLICK AQUI PARA IR **EDITAR** PROFESORES.></a><br>'
-        echo '<a href="anyadir_profesor.php"> CLICK AQUI PARA IR **ANYADIR** PROFESOR.></a><br>'
-        echo '<a href="modificar_curso.php"> CLICK AQUI PARA IR **EDITAR** CURSOS.></a><br>'
+        echo '<a href="eliminar_alumnos.php"> CLICK AQUI PARA  **ELIMINAR** ALUMNOS.></a><br>';
+        echo '<a href="anyadir_profesor.php"> CLICK AQUI PARA IR **ANYADIR** PROFESOR.></a><br>';
+        echo '<a href="ver_alumnos.php"> CLICK AQUI PARA IR **VER** ALUMNOS.></a><br>';
       } else {
         echo "NO HAS PODIDO VALIDARTE SAD";
         

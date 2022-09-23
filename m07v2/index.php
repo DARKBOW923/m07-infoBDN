@@ -40,7 +40,6 @@
         echo '<a href="cursos2.php"> CLICK AQUI PARA IR **VER** PROFESORES.></a><br>';
         echo '<a href="anyadir_cursos.php"> CLICK AQUI PARA IR **ANYADIR** CURSOS.></a><br>';
         echo '<a href="alumnos.php"> CLICK AQUI PARA IR **ANYADIR** ALUMNOS.></a><br>';
-        echo '<a href="eliminar_alumnos.php"> CLICK AQUI PARA  **ELIMINAR** ALUMNOS.></a><br>';
         echo '<a href="anyadir_profesor.php"> CLICK AQUI PARA IR **ANYADIR** PROFESOR.></a><br>';
         echo '<a href="ver_alumnos.php"> CLICK AQUI PARA IR **VER** ALUMNOS.></a><br>';
       } else {

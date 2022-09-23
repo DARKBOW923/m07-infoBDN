@@ -16,8 +16,6 @@
           FOTO <input type="text" name="foto"><br>
           CONTRASEÑA <input type="text" name="contrasenya"><br>
           CURSO <input type="text" name="curso"><br>
-          CAMPO 1 PARA CREAR Y 2 PARA BORRAR.<input type="text" name="CAMPO"><br>
-          BORRAR (PONER DNI DEL PROFESOR)<input type="text" name="BORRAR"><br>
           COnfirmar <input type="submit">
       </form>
 

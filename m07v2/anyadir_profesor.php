@@ -9,9 +9,8 @@
   <body>
       BIENVENIDO, AQUI PODRAS AÑADIR PROFESORES!
       <form method="post">
-          NOMBRE DE LA TABLA <input type="text" name="tabla"><br>
           NOMBRE DEL PROFESOR <input type="text" name="nombre"><br>
-          DNI <input type="text" name ="dni"><br>
+          DNI <input type="text" name ="dni" required><br>
           APELLIDOS <input type="text" name="apellidos"><br>
           TITULO ACADEMICO <input type="text" name="titulo_academico"><br>
           FOTO <input type="text" name="foto"><br>
@@ -26,7 +25,7 @@
 
 
 <?php
-$IP = "192.168.1.37";
+$IP = "192.168.12.153";
 $USUARIO = "administrador";
 $PASSWD = "1234";
 $BASE_DE_DATOS = "infoBDN";
@@ -44,7 +43,7 @@ $NOMBRE=$_POST["nombre"];
 //Eliminacion de un registro de la base de datos
 $ID2 = $_POST["BORRAR"];
 //Creamos una variable llamada $SQL para guardar la consulta SQL que vamos a hacer, en este caso es para añadir datos a la consulta.
-$SQL = "INSERT INTO PROFESOR VALUES ('$DNI','$APELLIDO','$T_ACADEMICO','$RUTA',md5('$CONTRASENYA'),'$CURSO_IMPARTIDO','$NOMBRE', 'true')";
+$SQL = "INSERT INTO PROFESOR VALUES ('$DNI','$APELLIDO','$T_ACADEMICO','$RUTA',md5('$CONTRASENYA'),'$CURSO_IMPARTIDO','$NOMBRE', 'false')";
 //$SQL3CURSO = "INSERT INTO CURSO"
 mysqli_query($CONEXION,$SQL);
 if (mysqli_connect_errno()){

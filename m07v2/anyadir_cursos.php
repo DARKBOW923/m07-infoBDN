@@ -9,7 +9,7 @@
     <body>
         BIENVENIDO ADMINISTRADOR - AQUI PODRAS AÑADIR UN CURSO!<br>
     <form method="post">
-        ID CURSO <input type="text" name="id_curso"><br>
+        ID CURSO <input type="text" name="id_curso" required><br>
         NOMBRE <input type="text" name="nombre"><br>
         DESCRIPCION <input type ="text" name="descripcion"><br>
         HORAS <input type ="text" name ="horas"><br>
@@ -26,7 +26,7 @@
   
 <?php
 //datos de la conexion a la base de datos
-$IP = "192.168.1.37";
+$IP = "192.168.12.153";
 $BASE_DATOS = "infoBDN";
 $USUARIO="administrador";
 $CONTRASENYA ="1234";
@@ -50,7 +50,7 @@ $BUSCAR = $_POST['buscar'];
     }
 //aqui lo que hacemos es recoger los datos del usuario..
 //variable en la que guardamos la sentencia sql.
-$SQL = "INSERT INTO CURSO (ID_CURSO,NOMBRE,DESCRIPCION,HORAS,F_INICIO,F_FINAL,PROFESOR) VALUES ('$ID_CURSO','$NOMBRE','$DESCRIPCION',$HORAS,'$F_INICIO','$F_FINAL','$PROFESOR')";
+$SQL = "INSERT INTO CURSO (ID_CURSO,NOMBRE,DESCRIPCION,HORAS,F_INICIO,F_FINAL,PROFESOR, DESACTIVAR) VALUES ('$ID_CURSO','$NOMBRE','$DESCRIPCION',$HORAS,'$F_INICIO','$F_FINAL','$PROFESOR', 'false')";
 $BUSCADOR = "SELECT * FROM CURSO WHERE NOMBRE LIKE '%$BUSCAR%'";
 //$PEPO =mysqli_query($CONEXION,$BUSCADOR);
 $PEPO =mysqli_query($CONEXION,$BUSCADOR);

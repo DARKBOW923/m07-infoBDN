@@ -48,8 +48,7 @@ if (mysqli_connect_errno()){
 //variable en la que guardamos la sentencia sql.
 $SQL = "INSERT INTO ALUMNOS (ID_ALUMNO,DNI,NOMBRE,APELLIDO,FOTO,CONTRASENYA) VALUES ($ID_ALUMNO,'$DNI','$NOMBRE','$APELLIDO','$FOTO',md5('$CONTRASENYA'))";
     
-    header("Location: ver_alumnos.php"); 
-    exit();
+
 
 mysqli_query($CONEXION,$SQL);
 ?>

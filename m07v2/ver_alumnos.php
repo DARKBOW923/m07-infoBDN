@@ -48,7 +48,7 @@ echo '
 
 ';
     
-        
+        //generamos la tabla a partir de los resultados que obtenemos
         while ( $fila = mysqli_fetch_array($PEPO) ) {
        echo '
             <tr>  

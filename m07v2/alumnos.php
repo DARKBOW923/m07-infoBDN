@@ -9,8 +9,8 @@
 <body>
     BIENVENIDO ADMINISTRADOR - AQUI PODRAS AÑADIR UN ALUMNO!
    <form method="post">>
-    ID_ALUMNO <input type="text" name="id_alumno"><br>
-    DNI <input type="text" name="dni"><br>
+    ID_ALUMNO <input type="text" name="id_alumno" required><br>
+    DNI <input type="text" name="dni" required><br>
     NOMBRE <input type ="text" name="nombre"><br>
     APELLIDO <input type ="text" name ="apellido"><br>
     FOTO <input type ="text" name ="foto"><br>

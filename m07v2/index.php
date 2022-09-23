@@ -14,7 +14,7 @@
       BIENVENIDO, AQUI PODRAS AÑADIR DATOS A UNA BASE DE DATOS
       <form method="post" action="index.php">
           NOMBRE DE LA TABLA <input type="text" name="usuario"><br>
-          CONTRASENYA <input type="text" name="contrasenya" value="<?php echo 'hola' ?>"><br>
+          CONTRASENYA <input type="text" name="contrasenya"><br>
           COnfirmar <input type="submit">
       </form>
   </body>

@@ -46,7 +46,7 @@ if (mysqli_connect_errno()){
 }
 //aqui lo que hacemos es recoger los datos del usuario..
 //variable en la que guardamos la sentencia sql.
-$SQL = "INSERT INTO ALUMNOS (ID_ALUMNO,DNI,NOMBRE,APELLIDO,FOTO,CONTRASENYA) VALUES ($ID_ALUMNO,'$DNI','$NOMBRE','$APELLIDO','$FOTO',md5('$CONTRASENYA'))";
+$SQL = "INSERT INTO ALUMNOS (ID_ALUMNO,DNI,NOMBRE,APELLIDO,FOTO,CONTRASENYA) VALUES ($ID_ALUMNO,'$DNI','$NOMBRE','$APELLIDO','$FOTO',md5('$CONTRASENYA')), DESACTIVAR='true'";
     
 
 

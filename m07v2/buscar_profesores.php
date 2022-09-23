@@ -53,7 +53,7 @@ echo '
 
 ';
     
-        
+        //generamos la tabla
         while ( $fila = mysqli_fetch_array($PEPO) ) {
        echo '
             <tr>  

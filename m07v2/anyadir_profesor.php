@@ -41,7 +41,7 @@ $NOMBRE=$_POST["nombre"];
 //Eliminacion de un registro de la base de datos
 $ID2 = $_POST["BORRAR"];
 //Creamos una variable llamada $SQL para guardar la consulta SQL que vamos a hacer, en este caso es para añadir datos a la consulta.
-$SQL = "INSERT INTO PROFESOR VALUES ('$DNI','$APELLIDO','$T_ACADEMICO','$RUTA',md5('$CONTRASENYA'),'$CURSO_IMPARTIDO','$NOMBRE', 'false')";
+$SQL = "INSERT INTO PROFESOR VALUES ('$DNI','$APELLIDO','$T_ACADEMICO','$RUTA',md5('$CONTRASENYA'),'$CURSO_IMPARTIDO','$NOMBRE', 'true')";
 //$SQL3CURSO = "INSERT INTO CURSO"
 mysqli_query($CONEXION,$SQL);
 if (mysqli_connect_errno()){

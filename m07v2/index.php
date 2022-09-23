@@ -11,7 +11,7 @@
       <title>Document</title>
   </head>
   <body>
-      BIENVENIDO, AQUI PODRAS AÑADIR DATOS A UNA BASE DE DATOS
+      BIENVENIDO, AQUI PODRAS INICIAR SESION!
       <form method="post" action="index.php">
           USUARIO <input type="text" name="usuario"><br>
           CONTRASENYA <input type="text" name="contrasenya"><br>

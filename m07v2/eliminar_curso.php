@@ -12,7 +12,7 @@
   
 <?php
 //datos de la conexion a la base de datos
-$IP = "192.168.1.37";
+$IP = "192.168.12.153";
 $BASE_DATOS = "infoBDN";
 $USUARIO="administrador";
 $PASSWD ="1234";
@@ -62,7 +62,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 //$SQL = "UPDATE CURSO SET NOMBRE ='{$NOMBRE}', DESCRIPCION ='{$DESCRIPCION}', HORAS=$HORAS,F_INICIO = '{$F_INICIO}', F_FINAL='{$F_FINAL}', PROFESOR='{$PROFESOR}' WHERE ID_CURSO='{$ID_CURSO}'";
-$SQL = "DELETE FROM CURSO WHERE NOMBRE = '{$NOMBRE}'";
+
+$SQL = "UPDATE CURSO SET DESACTIVAR = 'true'";
 echo $SQL;
     mysqli_query($CONEXION,$SQL);
    
@@ -75,7 +76,8 @@ if (mysqli_connect_errno()){
   
    
   
-
+//aqui lo que hacemos es recoger los datos del usuario..
+//variable en la que guardamos la sentencia sql.
 
 ?>
 

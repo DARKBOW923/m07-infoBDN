@@ -75,9 +75,7 @@ if (mysqli_connect_errno()){
     header("Location: curso.php"); 
     exit();
    
-  
-//aqui lo que hacemos es recoger los datos del usuario..
-//variable en la que guardamos la sentencia sql.
+
 
 ?>
 

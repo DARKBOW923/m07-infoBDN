@@ -14,7 +14,7 @@ session_start();
     }
     error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', 'On');
-    $query = "SELECT * from ALUMNOS where ID_ALUMNO = '$NOMBRE' and CONTRASENYA= md5('$CONTRASENYA')";
+    $query = "SELECT * from ALUMNOS where ID_ALUMNO = '$NOMBRE' and CONTRASENYA= md5('$CONTRASENYA') AND DESACTIVAR = 'no'";
    
     $resultado = mysqli_query($CONEXION, $query);
     

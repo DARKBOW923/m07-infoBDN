@@ -1,0 +1,14 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.6fr 1fr;
+    grid-template-rows: 1fr 0.6fr repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 6 / 6; background-color: black; height: 500px;}
+    .div2 { grid-area: 2 / 1 / 6 / 2; background-color: red; height: 500px;}
+    .div3 { grid-area: 1 / 1 / 2 / 6; background-color: blue; height: 200px;}
+    .div4 { grid-area: 5 / 1 / 6 / 6;  background-color: khaki; height: 300px;}
+    .div5 { grid-area: 2 / 4 / 3 / 5; background-color: yellow; height: 500px;}
+    

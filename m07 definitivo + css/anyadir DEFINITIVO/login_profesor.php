@@ -16,7 +16,7 @@ if ($_POST){
       echo "Ha habido un problema, vuelve a intentarlo";
       die();
     }
-    $query = "SELECT * from PROFESOR where DNI = '$NOMBRE' and CONTRASENYA= md5('$CONTRASENYA')";
+    $query = "SELECT * from PROFESOR where DNI = '$NOMBRE' and CONTRASENYA= md5('$CONTRASENYA') AND DESACTIVAR = 'true'";
 
     $resultado = mysqli_query($CONEXION, $query);
     echo ' <meta http-equiv="Refresh" content="2; URL=dashboard_profesor.php" />

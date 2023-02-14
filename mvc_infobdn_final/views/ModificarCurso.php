@@ -11,7 +11,7 @@ echo '<form action="../index.php?controller=CursoController&action=modificarCurs
     PROFESOR:<input type="text" name = "PROFESOR"><br>
     <br/>
   
-    <input type = "submit" value="Añadir curso">
+    <input type = "submit" value="Modificar Curso">
 </form>';
 //}
 ?>

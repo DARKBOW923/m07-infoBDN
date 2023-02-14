@@ -8,7 +8,7 @@ echo '<form action="../index.php?controller=ProfesorController&action=validarPro
    
     <br/>
   
-    <input type = "submit" value="Añadir ALYUMNO">
+    <input type = "submit" value="Iniciar sesion">
 </form>';
 //}
 ?>

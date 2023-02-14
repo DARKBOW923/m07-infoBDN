@@ -8,7 +8,7 @@ ID de la cuenta que quieres borrar de la matricula: <input type="text" name = "I
    
     <br/>
   
-    <input type = "submit" value="Añadir ALYUMNO">
+    <input type = "submit" value="Borrar matricula">
 </form>';
 //}
 ?>
